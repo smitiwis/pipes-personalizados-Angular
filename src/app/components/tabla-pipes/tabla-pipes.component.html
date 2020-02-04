@@ -1,0 +1,71 @@
+<div>
+  <h2>Pipes</h2>
+  <hr />
+</div>
+<table class="table table-hover" border="1px">
+  <thead>
+    <tr>
+      <th scope="col">Variables</th>
+      <th scope="col">Pipes</th>
+      <th scope="col">Producto</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <th>{{ nombre }}</th>
+      <th>uppercase</th>
+      <th>{{ nombre | uppercase }}</th>
+    </tr>
+    <tr>
+      <th>{{ apellido }}</th>
+      <td>lowercase</td>
+      <td>{{ apellido | lowercase }}</td>
+    </tr>
+    <tr>
+      <th>{{ nombre }}</th>
+      <td>slice:2</td>
+      <td>{{ nombre | slice: 2 }}</td>
+    </tr>
+    <tr>
+      <th>{{ numero }}</th>
+      <td>slice</td>
+      <td>{{ numero | slice: 1:4 }}</td>
+    </tr>
+    <tr>
+      <th>{{ porcentaje }}</th>
+      <td>percent</td>
+      <td>{{ porcentaje | percent }}</td>
+    </tr>
+    <tr>
+      <th>{{ porcentaje }}</th>
+      <td>percent</td>
+      <td>{{ porcentaje | percent: "1.0-2" }}</td>
+    </tr>
+    <tr>
+      <th>{{ dinero }}</th>
+      <td>dinero</td>
+      <td>{{ dinero | currency: "EUR" }}</td>
+    </tr>
+    <tr>
+      <th>{{ fecha }}</th>
+      <td>Fecha</td>
+      <td>{{ fecha | date }}</td>
+    </tr>
+    <tr>
+      <th>{{ fecha }}</th>
+      <td>Fecha</td>
+      <td>{{ fecha | date }}</td>
+    </tr>
+    <tr>
+      <th>{{ ejemplo }}</th>
+      <td>
+        <BUtton (click)="ver()" class=" btn btn-info">Ver</BUtton>
+        <BUtton (click)="ocultar()" class=" btn btn-success ml-2">Ocultar</BUtton>
+      </td>
+      <td>
+        <input type="text" name="" value="{{ ejemplo | ver }}" id="" />
+      </td>
+    </tr>
+  </tbody>
+</table>
